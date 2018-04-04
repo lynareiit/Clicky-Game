@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Navbar from "./components/Navbar/index.js";
 import Jumbotron from "./components/Jumbotron/Jumbotron.js";
 import Footer from "./components/Footer/footer.js";
-import bands from "./bands.json";
-import BandCard from "./components/Body/bands.js";
+import Body from "./components/ImageCards/ImageCard.js";
 import Wrapper from "./components/Wrapper/index.js";
 import './App.css';
 
@@ -19,8 +18,7 @@ class App extends Component {
     }
 
     // componentDidMount() to load the data from the endpoint
-    componentDidMount() {
-    }
+    componentDidMount()
 
   // shuffle kitties array in a this.state
   shuffleArray = array => {
@@ -48,13 +46,11 @@ class App extends Component {
   };
 
   render() {
-    return(
+    return (
       <div>
-        <h1 ={this.state.score} topScore = {this.state.topScore}/>
+        <h1 = {this.state.score} topScore = {this.state.topScore}/>
       </div>
-    
     );
   } 
-}
 
 export default App;
